@@ -8,53 +8,30 @@
     <div id="app">
       <h1>Liam Cloutier</h1>
       <div>
-        <h3>I like:</h3>
-        <img
-          id="ferretpic"
-          src="https://www.nps.gov/wica/learn/news/images/Ferret-in-Wind-Cave-National-Park-web.jpg"
-          alt="Ferrets"
-          height="150px"
-        />
         <button id="bigbutton">
-          Make the picture big!
+          Make the picture bigger!
         </button>
         <button id="smallbutton">
-            Make the picture small!
+            Make the picture smaller!
         </button>
-        <button id="movebutton">
-            Move the picture!
+        <button id="movebuttonR">
+            Move the picture to the right!
         </button>
-        <button id="backbuttons">
-            Make the picture normal (size)!
-        </button>
-        <button id="backbuttonp">
-          Make the picture normal (placing)!
+        <button id="movebuttonL">
+          Move the picture to the left!
       </button>
+        <button id="reset">
+          Reset!
+      </button>
+      <h3>I like:</h3>
+      <img
+        id="ferretpic"
+        src="https://www.nps.gov/wica/learn/news/images/Ferret-in-Wind-Cave-National-Park-web.jpg"
+        alt="Ferrets"
+        height="150px"
+      />
       </div>
     </div>
-    <script>
-      const ferretPic = document.getElementById('ferretpic');
-      const bigButton = document.getElementById('bigbutton');
-      const smallButton = document.getElementById('smallbutton');
-      const moveButton = document.getElementById('movebutton');
-      const normalButtonS = document.getElementById('backbuttons');
-      const normalButtonP = document.getElementById('backbuttonp');
-      
-      bigButton.addEventListener('click', function () {
-        ferretPic.height = 200;
-      });
-      smallButton.addEventListener('click', function () {
-        ferretPic.height = 100;
-      });
-      moveButton.addEventListener('click', function () {
-        ferretPic.style = 'margin-left: 200px';
-      });     
-      normalButtonS.addEventListener('click', function () {
-        ferretPic.height = 150;
-      });
-      normalButtonP.addEventListener('click', function () {
-        ferretPic.style = 'margin-left: 0';
-      });
-    </script>
+    <script src="src/index.js"></script>
   </body>
 </html>
